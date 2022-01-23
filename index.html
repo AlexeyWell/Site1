@@ -14,36 +14,31 @@
  <body>
   <div class="content">
 
-    <header>
+   <header>
         <div class="logo-header">
                           <div class="pic-logo"><img src="img/logo_top.svg"></div>
                           <div class="text-logo">Talk to people artificial language</div>
         </div>
-        <form>
-                          <div class="registration-form">
-                            <div class="tabs-form">
-                                <input type="radio" name="tab" id="tab-join" checked>
-                                <label for="tab-join">Join us</label>
-                                <input type="radio" name="tab" id="tab-sign">
-                                <label for="tab-sign">Sign in</label>
-                                  
-                                  <div id="join">
-                                        <input type="text" placeholder="Name" class="name">
-                                        <input type="email" placeholder="E-mail" class="email">
-                                        <input type="password" placeholder="Password" class="password">
-                                        <div class="form-text">If you'ru the celebrity, enter the code to create a elinguage</div>
-                                        <input type="text" placeholder="Code" class="code">
-                                        <input type="submit" value="Register now"  class="register-buttom">
-                                  </div>
-                                  <div id="sign">
-                                    <input type="email" placeholder="E-mail" class="email">
-                                    <input type="password" placeholder="Password" class="password">
-                                    <input type="submit" value="Sign in"  class="sign-buttom">
-                                  </div>   
-                            </div>
-                          </div> 
-        </form>
-    </header>
+        <div class="registration-form">
+          <div class="tabs-form">
+          <a class="reg-bnt" href="" onclick = "document.getElementById('Sign').style.display='none'; return false;">Join us</a>
+          <a class="reg-bnt" href="" onclick = "document.getElementById('Sign').style.display='block'; return false;">Sign in</a>
+          </div>
+              <div id="Join">
+                  <input type="text" placeholder="Name" class="name">
+                  <input type="email" placeholder="E-mail" class="email">
+                  <input type="password" placeholder="Password" class="password">
+                  <div class="form-text">If you'ru the celebrity, enter the code to create a elinguage</div>
+                  <input type="text" placeholder="Code" class="code">
+                  <a href="" class="form-bnt">Register now</a>
+              </div>
+              <div id="Sign">
+                  <input type="email" placeholder="E-mail" class="email">
+                  <input type="password" placeholder="Password" class="password">
+                  <a href="" class="form-bnt">Sign in</a>
+              </div>
+    </div>
+   </header>
     
     <div class="main" >
         <div class="title">What is Elinguage?
