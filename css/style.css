@@ -83,6 +83,7 @@ justify-content: center;
 align-items: center; 
 font-size: 16pt;
 color:#fff;
+border: 0;
 }
 
 .reg-bnt:hover{
@@ -92,10 +93,11 @@ color:#2E4344;
 .name,.email,.password,.code{
 height: 40px;
 width: 90%;
-margin-top: 18px;
+margin-top: 19px;
 font-size: 14pt;
-margin-left: 15px;
+margin-left: 18px;
 border: 0;
+padding: 0px;
 }
 
 .form-text{
@@ -104,9 +106,10 @@ height: 40px;
 width: 80%;
 margin-top: 10px;
 margin-bottom: 7px;
-margin-left: 14px;
+margin-left: 19px;
 font-size: 14pt;
 color:#FFff;  
+
 }
 
 .form-bnt{
@@ -116,7 +119,7 @@ height: 40px;
 width: 90%;
 font-size: 22pt;
 font-weight: bolder;
-margin-left: 15px;
+margin-left: 19px;
 margin-top: 15px;
 font-weight: 900;
 text-decoration: none;

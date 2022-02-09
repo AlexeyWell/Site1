@@ -21,23 +21,23 @@
         </div>
         <div class="registration-form">
           <div class="tabs-form">
-          <a class="reg-bnt" href="" onclick = "document.getElementById('Sign').style.display='none'; return false;">Join us</a>
-          <a class="reg-bnt" href="" onclick = "document.getElementById('Sign').style.display='block'; return false;">Sign in</a>
+              <button class="reg-bnt" id="btn_one">Join us</button>
+              <button class="reg-bnt" id="btn_two">Sign in</button>
           </div>
-              <div id="Join">
-                  <input type="text" placeholder="Name" class="name">
-                  <input type="email" placeholder="E-mail" class="email">
-                  <input type="password" placeholder="Password" class="password">
-                  <div class="form-text">If you'ru the celebrity, enter the code to create a elinguage</div>
-                  <input type="text" placeholder="Code" class="code">
-                  <a href="" class="form-bnt">Register now</a>
-              </div>
-              <div id="Sign">
-                  <input type="email" placeholder="E-mail" class="email">
-                  <input type="password" placeholder="Password" class="password">
-                  <a href="" class="form-bnt">Sign in</a>
-              </div>
-    </div>
+          <div id="Join">
+              <input type="text" placeholder="Name" class="name">
+              <input type="email" placeholder="E-mail" class="email">
+              <input type="password" placeholder="Password" class="password">
+              <div class="form-text">If you'ru the celebrity, enter the code to create a elinguage</div>
+              <input type="text" placeholder="Code" class="code">
+              <a href="" class="form-bnt">Register now</a>
+          </div>
+          <div id="Sign">
+              <input type="email" placeholder="E-mail" class="email">
+              <input type="password" placeholder="Password" class="password">
+              <a href="" class="form-bnt">Sign in</a>
+          </div>
+      </div>
    </header>
     
     <div class="main" >
@@ -62,4 +62,18 @@
 
   </div>
  </body>
+<script>
+document.getElementById("btn_one").addEventListener("click", delStyle);
+    function delStyle(){
+        var del = document.getElementById("Sign");
+        del.style.display = "none";
+}
+
+document.getElementById("btn_two").addEventListener( "click", getStyle);
+    function getStyle(){
+        var get = document.getElementById("Sign");
+        get.style.display = "block";
+        }
+
+</script>
 </html>
