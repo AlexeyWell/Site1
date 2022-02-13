@@ -16,13 +16,15 @@
 
    <header>
         <div class="logo-header">
-                          <div class="pic-logo"><img src="img/logo_top.svg"></div>
-                          <div class="text-logo">Talk to people artificial language</div>
+            <div class="pic-logo"><img src="img/logo_top.svg"></div>
+            <div class="text-logo">Talk to people artificial language</div>
         </div>
         <div class="registration-form">
           <div class="tabs-form">
               <button class="reg-bnt" id="btn_one">Join us</button>
               <button class="reg-bnt" id="btn_two">Sign in</button>
+              <button class="reg-bnt" id="btn_three">Сontact</button>
+              <button class="reg-bnt" id="btn_four">Review</button>
           </div>
           <div id="Join">
               <input type="text" placeholder="Name" class="name">
@@ -37,12 +39,23 @@
               <input type="password" placeholder="Password" class="password">
               <a href="" class="form-bnt">Sign in</a>
           </div>
-      </div>
+          <div id="Contact">
+            <p class="add">We are located:</p> <p class="add">Venice, CA 90291, США</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1654.2599505883036!2d-118.4669854079351!3d33.97917741381882!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2baa30e932941%3A0x2222a0c18cd5ab98!2s3099-3011%20Ocean%20Front%20Walk%2C%20Venice%2C%20CA%2090291%2C%20%D0%A1%D0%A8%D0%90!5e0!3m2!1sru!2spl!4v1644675496851!5m2!1sru!2spl"
+             width="360" height="250" style="border:0;" allowfullscreen="" loading="lazy">
+            </iframe>
+          </div>
+          <div id="Reviev">
+            <textarea placeholder="leave your comment" name="comment" ></textarea>
+            <a href="" class="form-bnt">Save</a>
+          </div>
+        </div>
    </header>
     
     <div class="main" >
         <div class="title">What is Elinguage?
-        <div class="text">Web platform for communication using different artificial lenguages. New idea for your and your friends fun. Enjoy you conversation!</div>How it work? </div>
+        <div class="text">Web platform for communication using different artificial lenguages. 
+            New idea for your and your friends fun. Enjoy you conversation!</div>How it work? </div>
         <div class="main-navbar">
           <a class="section" href=""><img src="img/plus.png"><p class="blue-title">Start</p>Register or sign on</a>
           <a class="section" href=""><img src="img/trans.png" ><p class="blue-title" >Translate</p>Write word or expression choose the language and translate</a>
@@ -50,7 +63,6 @@
           <a class="section" href=""><img src="img/idea.png"><p class="blue-title" >Create</p>Create your own language</a>
         </div>
     </div>
-    
     <footer>
        <a href="index.html" class="logo-footer"><div><img src="img/logo_bottom.png"></div></a>
        <a href="mailto:support@elinguage.com" class="feedback">
@@ -63,17 +75,101 @@
   </div>
  </body>
 <script>
-document.getElementById("btn_one").addEventListener("click", delStyle);
-    function delStyle(){
-        var del = document.getElementById("Sign");
-        del.style.display = "none";
-}
-
-document.getElementById("btn_two").addEventListener( "click", getStyle);
-    function getStyle(){
-        var get = document.getElementById("Sign");
+btn_one.addEventListener("click", function (){
+    var get = document.getElementById("Join");
         get.style.display = "block";
-        }
+    var del = document.getElementById("Sign");
+        del.style.display = "none";
+    var del = document.getElementById("Reviev");
+        del.style.display = "none"  
+    var del = document.getElementById("Contact");
+        del.style.display = "none";      
 
+    var col = document.getElementById("btn_one");
+        col.style.backgroundColor = "#f8f4f2";
+        col.style.color = "#2E4344";
+    var col = document.getElementById("btn_two");
+        col.style.backgroundColor = "#2E4344";
+        col.style.color = "#fff";
+    var col = document.getElementById("btn_three");
+        col.style.backgroundColor = "#2E4344";
+        col.style.color = "#fff";    
+    var col = document.getElementById("btn_four");
+        col.style.backgroundColor = "#2E4344";
+        col.style.color = "#fff";
+        
+});
+    
+btn_two.addEventListener( "click", function (){
+    var get = document.getElementById("Sign");
+        get.style.display = "block";
+    var del = document.getElementById("Contact");
+        del.style.display = "none";
+    var del = document.getElementById("Join");
+        del.style.display = "none";
+    var del = document.getElementById("Reviev");
+        del.style.display = "none";
+
+    var col = document.getElementById("btn_two");
+        col.style.backgroundColor = "#f8f4f2";
+        col.style.color = "#2E4344";
+    var col = document.getElementById("btn_one");
+        col.style.backgroundColor = "#2E4344";
+        col.style.color = "#fff";
+    var col = document.getElementById("btn_three");
+        col.style.backgroundColor = "#2E4344";
+        col.style.color = "#fff";
+    var col = document.getElementById("btn_four");
+        col.style.backgroundColor = "#2E4344";
+        col.style.color = "#fff";
+});
+
+btn_three.addEventListener( "click", function (){
+    var get = document.getElementById("Contact");
+        get.style.display = "block";
+    var del = document.getElementById("Sign");
+        del.style.display = "none";
+    var del = document.getElementById("Join");
+        del.style.display = "none";
+    var del = document.getElementById("Reviev");
+        del.style.display = "none";
+
+    var col = document.getElementById("btn_three");
+        col.style.backgroundColor = "#f8f4f2";
+        col.style.color = "#2E4344";
+    var col = document.getElementById("btn_one");
+        col.style.backgroundColor = "#2E4344";
+        col.style.color = "#fff";
+    var col = document.getElementById("btn_two");
+        col.style.backgroundColor = "#2E4344";
+        col.style.color = "#fff";
+    var col = document.getElementById("btn_four");
+        col.style.backgroundColor = "#2E4344";
+        col.style.color = "#fff";
+});
+
+btn_four.addEventListener( "click", function (){
+    var get = document.getElementById("Reviev");
+        get.style.display = "block";
+    var del = document.getElementById("Sign");
+        del.style.display = "none";
+    var del = document.getElementById("Join");
+        del.style.display = "none";
+    var del = document.getElementById("Contact");
+        del.style.display = "none";
+
+    var col = document.getElementById("btn_four");
+        col.style.backgroundColor = "#f8f4f2";
+        col.style.color = "#2E4344";
+    var col = document.getElementById("btn_one");
+        col.style.backgroundColor = "#2E4344";
+        col.style.color = "#fff";
+    var col = document.getElementById("btn_two");
+        col.style.backgroundColor = "#2E4344";
+        col.style.color = "#fff";
+    var col = document.getElementById("btn_three");
+        col.style.backgroundColor = "#2E4344";
+        col.style.color = "#fff";
+});
 </script>
 </html>
